@@ -25,6 +25,10 @@ public:
     friend fraction operator*(fraction f1, fraction f2);
     friend fraction operator/(fraction f1, fraction f2);
 
+    //Increment and Decrement
+    fraction operator++();
+    fraction operator--();
+
 private:
     int num;    
     int denom;  

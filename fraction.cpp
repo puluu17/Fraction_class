@@ -65,3 +65,14 @@ fraction operator/(fraction f1, fraction f2) {
         f1.denom * f2.num
     );
 }
+
+//Increment and Decrement 
+fraction fraction::operator++() {
+    num += denom;
+    return fraction(num, denom);
+}
+
+fraction fraction::operator--() {
+    num -= denom;
+    return fraction(num, denom);
+}
