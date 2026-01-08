@@ -13,6 +13,9 @@ public:
     void setnumerator(int n);
     void setdenominator(int d);
 
+    //Accessor
+    int getnumerator();
+    int getdenominator();
 
 private:
     int num;    

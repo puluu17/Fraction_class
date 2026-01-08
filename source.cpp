@@ -6,8 +6,8 @@ int main() {
 
     fraction f1;
     fraction f2(3);
-    fraction f3(4, 5);
-
+    fraction f3(4,5);
+    
 
     return 0;
 }

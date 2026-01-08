@@ -23,3 +23,12 @@ void fraction::setnumerator(int n) {
 void fraction::setdenominator(int d) {
     denom = d;
 }
+
+//Accessor
+int fraction::getnumerator() {
+    return num;
+}
+
+int fraction::getdenominator() {
+    return denom;
+}
