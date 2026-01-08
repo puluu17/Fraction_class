@@ -36,3 +36,32 @@ int fraction::getdenominator() {
 void fraction::output() {
     cout << num << "/" << denom << endl;
 }
+
+//Operator Overloading
+fraction operator+(fraction f1, fraction f2) {
+    return fraction(
+        f1.num * f2.denom + f2.num * f1.denom,
+        f1.denom * f2.denom
+    );
+}
+
+fraction operator-(fraction f1, fraction f2) {
+    return fraction(
+        f1.num * f2.denom - f2.num * f1.denom,
+        f1.denom * f2.denom
+    );
+}
+
+fraction operator*(fraction f1, fraction f2) {
+    return fraction(
+        f1.num * f2.num,
+        f1.denom * f2.denom
+    );
+}
+
+fraction operator/(fraction f1, fraction f2) {
+    return fraction(
+        f1.num * f2.denom,
+        f1.denom * f2.num
+    );
+}

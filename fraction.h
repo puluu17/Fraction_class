@@ -19,7 +19,11 @@ public:
 
     void output();
 
-    
+    //Operator Overloading
+    friend fraction operator+(fraction f1, fraction f2);
+    friend fraction operator-(fraction f1, fraction f2);
+    friend fraction operator*(fraction f1, fraction f2);
+    friend fraction operator/(fraction f1, fraction f2);
 
 private:
     int num;    

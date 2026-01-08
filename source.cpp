@@ -10,5 +10,7 @@ int main() {
 
     f1.output();
 
+    (f1-f2).output();
+
     return 0;
 }
