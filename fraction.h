@@ -9,6 +9,11 @@ public:
     fraction(int n);             
     fraction(int n, int d);     
 
+    //Mutator
+    void setnumerator(int n);
+    void setdenominator(int d);
+
+
 private:
     int num;    
     int denom;  
