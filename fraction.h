@@ -17,6 +17,10 @@ public:
     int getnumerator();
     int getdenominator();
 
+    void output();
+
+    
+
 private:
     int num;    
     int denom;  

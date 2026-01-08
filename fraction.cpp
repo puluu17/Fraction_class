@@ -32,3 +32,7 @@ int fraction::getnumerator() {
 int fraction::getdenominator() {
     return denom;
 }
+
+void fraction::output() {
+    cout << num << "/" << denom << endl;
+}
