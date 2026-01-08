@@ -14,5 +14,8 @@ int main() {
     ++f2;
     f2.output();
 
+    f1 = f2 * f3;
+    f1.output();
+
     return 0;
 }

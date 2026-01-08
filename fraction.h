@@ -29,6 +29,14 @@ public:
     fraction operator++();
     fraction operator--();
 
+    //Comparison Operators
+    friend bool operator==(fraction f1, fraction f2);
+    friend bool operator!=(fraction f1, fraction f2);
+    friend bool operator<(fraction f1, fraction f2);
+    friend bool operator>(fraction f1, fraction f2);
+    friend bool operator<=(fraction f1, fraction f2);
+    friend bool operator>=(fraction f1, fraction f2);
+
 private:
     int num;    
     int denom;  

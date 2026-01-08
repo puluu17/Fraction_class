@@ -76,3 +76,28 @@ fraction fraction::operator--() {
     num -= denom;
     return fraction(num, denom);
 }
+
+//Comparison Operators
+bool operator==(fraction f1, fraction f2) {
+    return (f1.num * f2.denom) == (f2.num * f1.denom);
+}
+
+bool operator!=(fraction f1, fraction f2) {
+    return !(f1 == f2);
+}
+
+bool operator<(fraction f1, fraction f2) {
+    return (f1.num * f2.denom) < (f2.num * f1.denom);
+}
+
+bool operator>(fraction f1, fraction f2) {
+    return (f1.num * f2.denom) > (f2.num * f1.denom);
+}
+
+bool operator<=(fraction f1, fraction f2) {
+    return (f1 < f2) || (f1 == f2);
+}
+
+bool operator>=(fraction f1, fraction f2) {
+    return (f1 > f2) || (f1 == f2);
+}
